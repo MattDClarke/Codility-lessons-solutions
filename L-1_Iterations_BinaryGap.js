@@ -1,5 +1,5 @@
 // Find longest sequence of zeros in binary representation of an integer.
-// Problem description: https://app.codility.com/programmers/lessons/1-iterations/binary_gap
+// Problem description: https://app.codility.com/programmers/lessons/1-iterations/binary_gap/
 // Detected time complexity: Performance not assessed for this exercise.
 
 function solution(N) {

@@ -1,5 +1,5 @@
 // Find the missing element in a given permutation.
-// Problem description: https://app.codility.com/programmers/lessons/3-time_complexity/perm_missing_elem
+// Problem description: https://app.codility.com/programmers/lessons/3-time_complexity/perm_missing_elem/
 // Detected time complexity: O(N) or O(N * log(N))
 
 function solution(A) {

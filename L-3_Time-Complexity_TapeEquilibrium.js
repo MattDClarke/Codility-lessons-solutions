@@ -1,5 +1,5 @@
 // Minimize the value |(A[0] + ... + A[P-1]) - (A[P] + ... + A[N-1])|.
-// Problem description: https://app.codility.com/programmers/lessons/3-time_complexity/tape_equilibrium
+// Problem description: https://app.codility.com/programmers/lessons/3-time_complexity/tape_equilibrium/
 // Detected time complexity: O(N)
 
 // only 1 loop through array - time complexity = O(n)

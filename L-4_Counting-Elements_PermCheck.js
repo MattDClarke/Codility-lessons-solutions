@@ -1,5 +1,5 @@
 // Check whether array A is a permutation.
-// Problem description: https://app.codility.com/programmers/lessons/4-counting_elements/perm_check
+// Problem description: https://app.codility.com/programmers/lessons/4-counting_elements/perm_check/
 // Detected time complexity: O(N) or O(N * log(N))
 
 function solution(A) {
