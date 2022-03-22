@@ -21,11 +21,11 @@ function solution(N, A) {
             // counterArr is zero indexed
             const counterArrIndex = elVal - 1;
             // if max counter operation occured-> start line shifts
-            //   add 1 to new start line instead of 1 to prev value if start line has shifted due to max counter                          operation
+            //   add 1 to new start line instead of 1 to prev value if start line has shifted due to max counter operation
             counterArr[counterArrIndex] = Math.max(counterArr[counterArrIndex] + 1, startLine + 1);
             if (counterArr[counterArrIndex] > maxVal) {
             	maxVal = counterArr[counterArrIndex];
-        		}
+            }
         // given assumption: each el in A [1..N + 1]
         } else {
             startLine = maxVal;
@@ -33,6 +33,6 @@ function solution(N, A) {
     }
 
     // move any values that are behind the start line
-    // update any counters to maxToSet that we havent yet
+    // update any counters to startLine that we havent yet
     return counterArr.map((el) => Math.max(el, startLine));
 }
