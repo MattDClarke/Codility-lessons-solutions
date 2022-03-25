@@ -13,8 +13,9 @@ function solution(A) {
         } else {
             // for each lastEastIndex - there is an additional pair
             pairCount += lastEastIndex;
+            if (pairCount > 1000000000) return -1;
         }
     }
 
-    return (pairCount > 1000000000) ? -1 : pairCount;
+    return pairCount;
 }
