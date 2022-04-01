@@ -23,7 +23,7 @@ function solution(A) {
         return A[0] * A[1] * A[2];
     }
 
-    let min1, min2,max1, max2, max3;
+    let min1, min2, max1, max2, max3;
     min1 = min2 = 1001;
     max1 = max2 = max3 = -1001;
 
