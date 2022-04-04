@@ -7,17 +7,16 @@
 
 function solution(A) {
     const ALen = A.length;
-    // an event is a disk start point or end point
+    // an event is a disc start point or end point
     let events = [];
-    // for each disc, label its start point(+1) and end point (-1)
-    // (x value, start or end point flag)
+    // for each disc, label its start point (+1) and end point (-1)
     for (let i = 0; i < ALen; i += 1) {
+      // [[event, start or end point flag], ...]
       events.push([i - A[i], 1], [i + A[i], -1]);
     }
 
-
-    // sort by start point / end point value: a[0]
-    // if point value is the same, make start point first
+    // sort by event value: a[0]
+    // if event value is the same, sort start point (+1) before end point (-1)
     events.sort((a, b) => {
       if (a[0] - b[0] < 0) {
         return -1;
@@ -33,7 +32,8 @@ function solution(A) {
     });
 
 
-    // active_circles = how thick set of discs is at each event (start or end point)
+    // active_circles = how thick the set of discs is at each event (start or end point)
+    //    checked from left to right
     let intersections = 0;
     let active_circles = 0;
     // circle_count_delta = flag indicating start or end of disc
