@@ -49,4 +49,4 @@ function solution(A) {
 
     return intersections;
 
-  }
+}
