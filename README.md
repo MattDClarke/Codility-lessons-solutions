@@ -16,6 +16,6 @@
 - You can estimate the expected time complexity of the solution based on the maximum size of the inputs:
     - n =< 1 000 000, the expected time complexity is O(n) or O(n log n) - linear or logarithmic - no nested loops
     - n =< 10 000, the expected time complexity is O(n2) - quadratic - nested loops
-    - n =< 500, the expected time complexity is O(n3 - cubic - nested nested loops
+    - n =< 500, the expected time complexity is O(n3) - cubic - nested nested loops
 
 - You can read more about time complexity in the open reading material for Lesson 3: [Time Complexity](https://codility.com/media/train/1-TimeComplexity.pdf).
