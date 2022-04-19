@@ -5,6 +5,6 @@
 // Explanation: see https://codesays.com/2014/solution-to-count-div-by-codility/#comment-1415
 
 function solution(A, B, K) {
-     if (A % K === 0) return Math.floor((B - A) / K) + 1;
-     return Math.floor((B - (A - A % K)) / K);
+  if (A % K === 0) return Math.floor((B - A) / K) + 1;
+  return Math.floor((B - (A - (A % K))) / K);
 }

@@ -7,16 +7,16 @@
 //  Check consecutive values
 
 function solution(A) {
-    const ALen = A.length;
-    if (ALen < 3) return 0;
+  const ALen = A.length;
+  if (ALen < 3) return 0;
 
-    A.sort((a, b) => a - b);
+  A.sort((a, b) => a - b);
 
-    for (let i = 0; i < ALen - 2; i += 1) {
-        if (A[i] + A[i + 1] > A[i + 2]) {
-            return 1;
-        }
+  for (let i = 0; i < ALen - 2; i += 1) {
+    if (A[i] + A[i + 1] > A[i + 2]) {
+      return 1;
     }
+  }
 
-    return 0;
+  return 0;
 }

@@ -3,15 +3,15 @@
 // Detected time complexity: O(N) or O(N*log(N))
 
 function solution(A) {
-    var valsObj = {};
-    for (let i = 0; i < A.length; i++){
-        if (valsObj.hasOwnProperty(A[i])) {
-            delete valsObj[A[i]];
-        } else {
-            valsObj[A[i]] = 1;
-        }
+  var valsObj = {};
+  for (let i = 0; i < A.length; i++) {
+    if (valsObj.hasOwnProperty(A[i])) {
+      delete valsObj[A[i]];
+    } else {
+      valsObj[A[i]] = 1;
     }
-    // only unpaired val not deleted
-    const unpaired = Object.keys(valsObj)[0];
-    return parseInt(unpaired);
+  }
+  // only unpaired val not deleted
+  const unpaired = Object.keys(valsObj)[0];
+  return parseInt(unpaired);
 }

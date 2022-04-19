@@ -13,28 +13,28 @@
 //   else return 0
 
 function matchingPair(l, r) {
-    if (l === '(' && r === ')') return true;
-    if (l === '{' && r === '}') return true;
-    if (l === '[' && r === ']') return true;
-    return false;
+  if (l === "(" && r === ")") return true;
+  if (l === "{" && r === "}") return true;
+  if (l === "[" && r === "]") return true;
+  return false;
 }
 
 function solution(S) {
-    const SLen = S.length;
-    if (SLen === 0) return 1;
-    var stack = [];
+  const SLen = S.length;
+  if (SLen === 0) return 1;
+  var stack = [];
 
-    for (let char of S) {
-        if (char === '(' || char === '{' || char === '[') {
-            stack.push(char);
-        } else {
-            if (stack.length === 0) return 0;
-            const lastOpeningBracket = stack.pop();
-            if (!matchingPair(lastOpeningBracket, char)) return 0;
-        }
+  for (let char of S) {
+    if (char === "(" || char === "{" || char === "[") {
+      stack.push(char);
+    } else {
+      if (stack.length === 0) return 0;
+      const lastOpeningBracket = stack.pop();
+      if (!matchingPair(lastOpeningBracket, char)) return 0;
     }
+  }
 
-    // stack will be empty if all matching pairs found
-    if (stack.length !== 0) return 0;
-    return 1;
+  // stack will be empty if all matching pairs found
+  if (stack.length !== 0) return 0;
+  return 1;
 }

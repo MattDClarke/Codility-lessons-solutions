@@ -3,16 +3,14 @@
 // Detected time complexity: O(N) or O(N * log(N))
 
 function solution(A) {
-    const ALen = A.length;
-    const maxNum = ALen + 1;
-    // the sum of consecutive integers from 1 to n is equal to n(n+1) / 2.
-    const totalSum = maxNum * (maxNum + 1) / 2
+  const ALen = A.length;
+  const maxNum = ALen + 1;
+  // the sum of consecutive integers from 1 to n is equal to n(n+1) / 2.
+  const totalSum = (maxNum * (maxNum + 1)) / 2;
 
-    let partialSum = 0;
-    for (let i = 0; i < ALen; i += 1) {
-        partialSum += A[i];
-    }
-    return totalSum - partialSum;
+  let partialSum = 0;
+  for (let i = 0; i < ALen; i += 1) {
+    partialSum += A[i];
+  }
+  return totalSum - partialSum;
 }
-
-

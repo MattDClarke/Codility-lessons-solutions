@@ -6,11 +6,9 @@ function solution(A, K) {
   const ALen = A.length;
   let rotatedArr = [];
   A.forEach((el, i) => {
-      const newIndex = (i + K) % ALen;
-      rotatedArr[newIndex] = el;
+    const newIndex = (i + K) % ALen;
+    rotatedArr[newIndex] = el;
   });
 
   return rotatedArr;
 }
-
-

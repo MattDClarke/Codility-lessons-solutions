@@ -3,17 +3,17 @@
 // Detected complexity: O(N) or O(N * log(N))
 
 function solution(A) {
-    const ALen = A.length;
-    // create object to indicate integers presence
-    const intCount = {};
-    for (let i = 0; i < ALen; i += 1) {
-        if (A[i] > 0) {
-            intCount[A[i]] = A[i];
-        }
+  const ALen = A.length;
+  // create object to indicate integers presence
+  const intCount = {};
+  for (let i = 0; i < ALen; i += 1) {
+    if (A[i] > 0) {
+      intCount[A[i]] = A[i];
     }
+  }
 
-    // loop thro 1 to max integer input + 1
-    for (let i = 1; i < 100002; i += 1 ) {
-        if (!intCount[i]) return i;
-    }
+  // loop thro 1 to max integer input + 1
+  for (let i = 1; i < 100002; i += 1) {
+    if (!intCount[i]) return i;
+  }
 }

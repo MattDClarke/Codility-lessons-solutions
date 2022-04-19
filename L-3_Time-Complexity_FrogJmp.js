@@ -3,8 +3,5 @@
 // Detected time complexity: O(1)
 
 function solution(X, Y, D) {
-    return Math.ceil((Y - X) / D);
+  return Math.ceil((Y - X) / D);
 }
-
-
-
