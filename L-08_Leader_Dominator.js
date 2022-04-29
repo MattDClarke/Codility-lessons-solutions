@@ -27,10 +27,15 @@ function solution(A) {
 
   // candidate dominator
   let candidate = -1;
-  // value still on stack - may be dominator
-  if (size > 0) {
-    candidate = value;
+
+  // return -1 if no dominator
+  if (size < 1) {
+    return candidate;
   }
+
+  // value still on stack - may be dominator
+  candidate = value;
+
   let dominatorIndex = -1;
   let lastCandidateIndex = -1;
   let count = 0;
