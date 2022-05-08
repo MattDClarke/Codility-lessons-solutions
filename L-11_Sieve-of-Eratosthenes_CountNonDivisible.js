@@ -2,6 +2,7 @@
 // Problem description: https://app.codility.com/programmers/lessons/11-sieve_of_eratosthenes/count_non_divisible/
 // Detected complexity: O(N * log(N))
 
+// count number of elements that are divisors to find number of elements that are non-divisors
 // For explanation see https://www.martinkysel.com/codility-countnondivisible-solution/
 
 function solution(A) {
