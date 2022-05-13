@@ -5,14 +5,14 @@
 function solution(A) {
   const ALen = A.length;
   let pairCount = 0;
-  let lastEastIndex = 0;
+  let eastCarsCount = 0;
 
   for (let i = 0; i < ALen; i += 1) {
     if (A[i] === 0) {
-      lastEastIndex += 1;
+      eastCarsCount += 1;
     } else {
-      // for each lastEastIndex - there is an additional pair
-      pairCount += lastEastIndex;
+      // for each east travelling car - there is an additional pair
+      pairCount += eastCarsCount;
       if (pairCount > 1000000000) return -1;
     }
   }
