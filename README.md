@@ -10,7 +10,7 @@
 
 ## Notes on doing each exercise
 
-- Read the "Open reading material (PDF)", currently at the top of each lesson. It gives you information needed to solve the exercises for the lesson. Although many questions seem to be math focused and don't rely on information from the open reading material.
+- Read the "Open reading material (PDF)", currently at the top of each lesson. It gives you information needed to solve the exercises for the lesson. Some questions don't rely on information from the open reading material.
 - You don't need to test for cases outside of the given assumptions.
 - Each exercise has some basic tests, you can write your own test cases.
 - Performance matters. Consider the time complexity of your solutions. Be careful of nested loops!
